@@ -12,10 +12,20 @@ hide_st_style = """
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
-            button.styles_terminalButton__JBj5T {visibility: hidden;}
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
+hide_button_style = """
+<style>
+.styles_terminalButton__JBj5T {
+    display: none !important;
+}
+</style>
+"""
+
+st.markdown(hide_button_style, unsafe_allow_html=True)
+
 
 # Streamlit UI
 st.title("SQL Query Generator")
